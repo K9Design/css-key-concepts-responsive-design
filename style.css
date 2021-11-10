@@ -1,20 +1,131 @@
 :root {
-    --coral: #F05D5E;
-    --teal: #0F7173;
-    --light: #E7ECEF;
-    --dark: #272932;
-    --camel: #D8A47F;
+  --coral: #f05d5e;
+  --teal: #0f7173;
+  --light: #e7ecef;
+  --dark: #272932;
+  --camel: #d8a47f;
+  --darker: #00000011;
+  --lighter: #ffffff11;
 }
 
-body {
-    background-color: var(--light);
+html {
+  font-size: 100%;
+  font-family: "Noto", serif;
 }
 
-.card {
-    padding: 10px;
+h1 {
+  font-size: 2rem;
+  font-family: "Sofia", sans-serif;
+  text-align: center;
+}
+h3 {
+  font-size: 1.2rem;
+  font-family: "Sofia", sans-serif;
+}
+p {
+  font-size: 1rem;
+}
+
+.cat-menu {
+    border: 1px solid var(--teal);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.cat-menu a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--coral);
     margin: 10px;
 }
 
+.cat-more-menu {
+    border: 1px solid var(--coral);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.cat-more-menu a {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--teal);
+    margin: 10px;
+}
+
+
+.catIpsum {
+  display: none;
+}
+
+.card {
+  padding: 5px;
+  margin: 5px;
+}
+
 img {
-    width: 250px;
+  width: 250px;
+}
+
+.card-container {
+  border: 1px solid var(--coral);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid var(--teal);
+  width: 260px;
+}
+
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .catIpsum {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  .catIpsum {
+    display: block;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark);
+    color: --light;
+  }
+  .navbar {
+    background-color: var(--lighter);
+}
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--light);
+    color: --dark;
+  }
+  .navbar {
+    background-color: var(--darker);
+}
 }
