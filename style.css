@@ -27,33 +27,32 @@ p {
 }
 
 .cat-menu {
-    border: 1px solid var(--teal);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    list-style-type: none;
+  border: 1px solid var(--teal);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style-type: none;
 }
 .cat-menu a {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: var(--coral);
-    margin: 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--coral);
+  margin: 10px;
 }
 
 .cat-more-menu {
-    border: 1px solid var(--coral);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    list-style-type: none;
+  border: 1px solid var(--coral);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style-type: none;
 }
 .cat-more-menu a {
-    font-size: 1.1rem;
-    font-weight: 300;
-    color: var(--teal);
-    margin: 10px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--teal);
+  margin: 10px;
 }
-
 
 .catIpsum {
   display: none;
@@ -117,7 +116,7 @@ img {
   }
   .navbar {
     background-color: var(--lighter);
-}
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -127,5 +126,5 @@ img {
   }
   .navbar {
     background-color: var(--darker);
-}
+  }
 }
